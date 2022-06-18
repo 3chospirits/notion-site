@@ -29,9 +29,9 @@ import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
-import { GitHubShareButton } from './GitHubShareButton'
 
 import styles from './styles.module.css'
+import { Background } from './Background'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -262,6 +262,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       {isLiteMode && <BodyClassName className='notion-lite' />}
       {isDarkMode && <BodyClassName className='dark-mode' />}
 
+      <Background />
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
@@ -285,8 +286,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={footer}
       />
-
-      <GitHubShareButton />
     </>
   )
 }

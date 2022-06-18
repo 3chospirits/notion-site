@@ -20,11 +20,12 @@ export default siteConfig({
   // twitter: 'transitive_bs',
   // github: 'transitive-bullshit',
   // linkedin: 'fisch2',
+  discord: "join",
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon: "https://i.imgur.com/8PjXk94.png",
-  defaultPageCover: "https://wallpaperaccess.com/full/327180.jpg",
+  // defaultPageCover: "https://wallpaperaccess.com/full/327180.jpg",
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
